@@ -1,0 +1,21 @@
+#box{
+    height: 605px;
+    width: 50%;
+    background-color:rgb(192,192,192) ;
+    
+}
+.text{
+    color:rgb(40, 38, 38);
+    margin-left: 3px;
+    padding-top: 20px;
+}
+mark{
+    color: red;
+    background-color:rgb(192,192,192)  ;
+}
+.x{
+    margin-left: 100px;
+}
+input,button{
+    margin-left: 100px;
+}

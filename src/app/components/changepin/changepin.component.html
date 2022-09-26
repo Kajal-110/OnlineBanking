@@ -1,0 +1,34 @@
+
+<form >
+    <div>
+        <a class="nav-link">
+                <label for="Enter Debit Card Number" > Enter  Old Pin<br>
+                    <input text="Enter Debit Card Number" [formControl]="oldpassword" >
+                </label>
+        </a>
+        <a class="nav-link" >
+                <label for="Enter Pin">Enter New Pin<br>
+                    <input type="text" [formControl]="newpassword" >
+                </label>
+        </a>
+        <a class="nav-link" >
+            <label for="Enter Pin">Enter New Confirm Pin<br>
+                <input type="text" [formControl]="confirmnewpassword">
+            </label>
+        </a>
+        <button  type="submit" (click)="changePin()"> Submit</button>
+    </div>
+
+
+   
+  
+</form>
+<div>
+    <div class="x" *ngFor="let add of adds" >
+        <div >
+              Old Password:-  <span class="y">{{add.oldpassword}}   </span><br>
+                 <!-- <span>{{add.newpassword}}</span>  -->
+              New Password:- <span class="z">{{add.confirmnewpassword}}</span>
+        </div>
+    </div>
+</div>

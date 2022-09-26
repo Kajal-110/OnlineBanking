@@ -1,0 +1,32 @@
+
+<div>
+    <form >
+<h2>Request letter to Bank for Stop Payment of Lost Cheque</h2>
+<label for="inputAccounHolderName">Account Holder Name</label><br>
+<input type="text" placeholder="name of the account holder name" [formControl]=" AccountHolderName"><br>
+
+<label for="inputPartyName">Party Name</label><br>
+<input type="text" placeholder="partyname" [formControl]="PartyName"><br>
+
+<label for="AccountType">Account Type</label><br>
+<input for="text" placeholder="Enter Account Type" [formControl]="TypeOfBankAccount">
+
+<label for="AccountNumber">Account Number</label><br>
+<input type="text" placeholder="Account Number" [formControl]="AccountNumber"><br>
+
+<label for="ChequeNumber">Cheque Number</label><br>
+<input type="text" placeholder="lost cheque number" [formControl]="CheckNumber"><br>
+
+<label for="Amount">Amount</label><br>
+<input type="text" placeholder="cheque amount" [formControl]="Amount"><br>
+
+<label for="ChequeStopPaymentReason">Chaque Stop Payment Reason</label><br>
+<input type="text" placeholder="mention reason" [formControl]="CheckStopPaymentReasone"><br>
+
+<label  class="x" for="inputCity">Cheque Date </label>
+<input type="text" class="form-control" name="date of Birth" type="date" value="2000-02-01" id="example-date-input" [formControl]="DateOnTheCheck">
+
+<button type="button" (click)="stopCheqhes()">Apply Foe Stop Cheque</button>
+ </form>
+</div> 
+

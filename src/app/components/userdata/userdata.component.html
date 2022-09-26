@@ -1,0 +1,77 @@
+
+
+ <form #addClientForm="ngForm"  (ngSubmit)="searchdata()" novalidate> 
+  <div id="x">
+    <mat-form-field color="accent" appearance="fill">
+        <mat-label>Inherited calendar color</mat-label>
+        <input matInput [matDatepicker]="picker1" >
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+        <mat-datepicker #picker1></mat-datepicker>
+    </mat-form-field>
+  </div>
+  <div id="y">
+      <mat-form-field color="accent" appearance="fill">
+        <mat-label>Custom calendar color</mat-label>
+        <input matInput [matDatepicker]="picker2" >
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+        <mat-datepicker #picker2 color="primary"></mat-datepicker>
+    </mat-form-field>
+  </div> 
+    <br>
+      <br>
+    <div class="col-sm-6 form-group">    
+        <button type="submit" class="btn btn-success" >Search</button>   
+    </div>  
+      <br>
+</form> 
+  
+   <table class="table">  
+    <thead class="thead-dark">  
+      <tr>  
+        <th scope="col">Id</th>  
+        <th scope="col">Name</th>  
+        <th scope="col">City</th>  
+        <th scope="col">Date of Birth</th>  
+      </tr>  
+    </thead>  
+    <tbody>  
+      <tr *ngFor="let add of adds">  
+        <th scope="row">{{add.id}}</th> 
+        <th> {{add.name}}</th>
+        <td>{{add.address}}</td>  
+        <td>{{add.dateofbirth | date:'yyyy-MM-dd'}}</td>  
+      </tr>  
+      <!-- <tr *ngIf="!emp||emp.length==0">  
+        <td colspan="4">  
+            No Data Found  
+        </td>  
+      </tr>   -->
+    </tbody>  
+  </table>   
+
+
+
+
+
+
+
+  <!-- <div id="x">
+    <mat-form-field color="accent" appearance="fill">
+        <mat-label>Inherited calendar color</mat-label>
+        <input matInput [matDatepicker]="picker1" [(ngModel)]="model.startdate">
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+        <mat-datepicker #picker1></mat-datepicker>
+    </mat-form-field>
+  </div>
+  <div id="y">
+      <mat-form-field color="accent" appearance="fill">
+        <mat-label>Custom calendar color</mat-label>
+        <input matInput [matDatepicker]="picker2" [(ngModel)]="model.enddate">
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+        <mat-datepicker #picker2 color="primary"></mat-datepicker>
+    </mat-form-field>
+  </div>  -->

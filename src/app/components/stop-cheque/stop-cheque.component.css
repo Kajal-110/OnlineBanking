@@ -1,0 +1,35 @@
+label{
+    margin-left:110px;
+    margin-top: 10px;
+    }
+div{
+    background-color:rgb(192,192,192);
+    height:660px;
+    width:600px;
+    margin-left:300px;
+    }
+    
+input,select{
+    margin-left:110px;
+    height:40px;
+    width:340px;
+    border:1px solid white;
+    border-radius:12px;
+   
+    }
+ h3{
+    padding:20px;
+    }
+button{
+    margin-left:180px;
+    height:30px;
+    width:200px;
+    border-radius:12px;
+    background-color:blue;
+    margin-top:30px;
+    color:white;
+    border:1px solid white;
+    }
+    label{
+        color: blue;
+    }

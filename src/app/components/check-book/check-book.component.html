@@ -1,0 +1,67 @@
+ <div class="col-md-6 offset-md-3 mt-5" id="box">
+        <br>
+        <h2 class="text">Select the account for which your require a cheque book. <mark> ***</mark></h2>
+        <form accept-charset="UTF-8" action="https://getform.io/f/{your-form-endpoint-goes-here}" method="POST" enctype="multipart/form-data" target="_blank">
+          <div class="form-group col-md-6">
+            <label for="exampleInputName"  class="x">Account Holder Name</label>
+            <input type="text"   class="form-control" placeholder="Enter your Account number"  [formControl]="accountnumber">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="exampleInputEmail1" required="required" class="x">Account type</label>
+            <input type="text" name="email" class="form-control"   placeholder="Enter your Account type" [formControl]=" accounttype">
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputCity" class="x">Branch</label>
+              <input type="text" name="password" class="form-control" id="inputpassword" placeholder="Enter Branch" [formControl]=" branch">
+            </div>
+            
+            <h2 class="text">Enter the number of Books and Select the number of pages in each Book. <mark>***</mark></h2>
+            <div class="form-group col-md-6">
+                <label for="inputCity" class="x">Maximum Thereshold Limit for each</label>
+                <input type="text"  class="form-control" id="inputmaximumlimit" placeholder="Enter Maximum limit" [formControl]="theresholdlimit">
+            </div>
+            
+            <div class="form-group col-md-6">
+                <label for="inputcheckbook" class="x">Number of Cheque Books</label>
+                <input type="text"  class="form-control" id="inputcheckbook" placeholder="Enter the number of cheque Books" [formControl]="checkbooks">
+            </div> 
+           
+            <div class="form-group col-md-6">
+                <label for="inputCity" class="x">Number of Cheque Leaves</label>
+                <input type="text"  class="form-control" id="inputcheckleaves" placeholder="Enter the number of cheque leaves" [formControl]="checkleaves">
+            </div>
+            
+          </div>
+         
+          <br>
+         
+           <button type="submit" class="btn btn-primary" (click)="chequeSubmit()">Submit</button>
+        </form>
+</div>      
+   
+      
+ 
+
+   <!-- <form method="post">
+      <p>
+        accountnumber<input type="text" [formControl]=" accountnumber">
+      </p>
+      <p>
+        accounttype<input type="text" [formControl]="accounttype">
+      </p>
+      <p>
+        branch<input type="text" [formControl]="branch">
+      </p>
+      <p>
+        theresholdlimit<input type="text" [formControl]=" theresholdlimit">
+      </p> 
+      <p>
+        chequebooks<input type="number" [formControl]="books">
+      </p>
+      <p>
+        chequeleaves<input type="number" [formControl]="leaves">
+      </p>
+      
+      <button type="button" (click)="chequeSubmit()">save</button>
+    </form>  -->

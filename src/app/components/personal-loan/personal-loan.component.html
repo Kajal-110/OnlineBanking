@@ -1,0 +1,24 @@
+
+<div>
+<h1>Just take 2 minute for you loan</h1>
+<p>Fill up the form below and loan executive would get in touch with you</p>
+
+<!-- <input  class="x"  type="text" placeholder =" Account Number"> --> 
+ <!-- <select name="Accountnumber" class="x">
+    <option value="">Account Number...</option>
+    <option *ngFor="let accountnumber of Account">
+      {{accountnumber.id}}
+    </option>
+</select> -->
+<input  class="x" type="text" placeholder ="Name" [formControl]="name">
+<input  class="x" type="e-mail" placeholder ="E-Mail" [formControl]="email">
+<input  class="x"  type="text" placeholder ="Number" [formControl]="number">
+<input  class="x" type="number" placeholder ="Amount" [formControl]="amount">
+ <input  class="x" type="text" placeholder ="Pin Code" [formControl]="pincode"> 
+<input  class="x" type="text" placeholder="City" [formControl]="city">  
+ <input  class="x" type="text" placeholder ="Adharnumber" [formControl]="adharnumber">  
+<input  class="x" type="text" placeholder ="Pannumber" [formControl]="pannumber">
+ <input  class="x" type="number" placeholder ="Salary" [formControl]="salary"><br>   
+<p><input type="checkbox">By clicking "Apply Now" you agree to the <span>Privacy policy</span>and <span>Terms Of Use</span>.</p>
+<button class="x" (click)="addData()">Apply Now</button>
+</div>

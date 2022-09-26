@@ -1,0 +1,22 @@
+<form>
+<div>
+<h2>Generate Pin</h2>
+<label>Enter Debit Cerd Holder Name</label><br>
+<input type="text" placeholder="Enter Name"  [formControl]="CerdHolderName"><br>
+
+<label>Enter Pin</label><br>
+<input type="text" placeholder="Enter Pin" [formControl]=" EnterPassword"><br>
+
+<button type="submit" (click)="pinCreated()">Submit</button><br>
+
+<p>If you want to change pin <a routerLink="../changepin">Click Here</a></p>
+
+</div>
+</form>
+
+<!-- [Key]
+        public int id { get; set; }
+        public string EnterDebitCerdHolderName { get; set; }
+        [MaxLength(30)]
+        public string Enterpin { get; set; }
+        public DateTime MemberSince { get; set; } -->

@@ -1,0 +1,28 @@
+div{
+    height:563px;
+    width:500px;
+    background-color:pink;
+    margin-left:380px;
+}
+p,h1{
+    padding-left:80px;
+    padding-right:80px;
+}
+.x{
+    height:6%;
+    width:280px;
+    margin-left:80px;
+    margin-top:10px;
+    border-radius:10px;
+    border:1px solid white;
+}
+input{
+    margin-left:0px;
+    margin-top:20px;
+}
+span{
+    color:blue;
+}
+button{
+    background-color:red;
+}

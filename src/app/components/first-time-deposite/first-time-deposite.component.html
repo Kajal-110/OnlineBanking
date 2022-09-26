@@ -1,0 +1,16 @@
+<form method="post">
+    <div>
+        <a class="nav-link">
+                <label for="Account Number" >Account Number
+                    <input text="text" [formControl]="AccountHolderName" >
+                </label>
+        </a>
+        <a class="nav-link" >
+                <label for="total">Total Amount<br>
+                    <input type="number" [formControl]="TotalAmount">
+                </label>
+        </a>
+        <button type="submit" (click)="Save()"> Submit</button>
+        
+    </div>
+</form>

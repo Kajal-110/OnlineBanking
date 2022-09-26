@@ -1,0 +1,16 @@
+.example-spacer {
+    flex: 3 3 auto;
+}
+form{
+    background-color:rgb(192,192,192) ;
+    width: 30%;
+   margin-top: 20px;
+    margin-left: 420px;
+    padding-left: 70px;
+    border: 1px solid rgb(13, 13, 84);
+}
+button{
+    margin-left: 90px;
+    background-color: blue;
+}
+

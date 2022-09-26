@@ -1,0 +1,53 @@
+<div class="container">
+<h1>Debit Card</h1>
+<div class="cards-container">
+<div class="cards-form">
+<form method="post" >
+<div class="form-group">
+<label for="">Card Number</label>
+<input type="text" name="cardNumber" [formControl]="cardnumber" >
+</div>
+<div class="form-group">
+<label for="">Card Holder</label>
+<input type="text" name="cardholder" [formControl]="cardholder" >
+</div>
+<div class="form-group form-group-inline">
+        <div>
+        <label for="">Expairy Month</label>
+        <input class="x" type="number" name="expairyMonth" [formControl]="expirationMM" >
+        </div>
+        <div>
+        <label for=""> Expairy Year</label>
+        <input class="x" type="number" name="expairyYear" [formControl]="expirationYY" >
+        </div>
+<div>
+<label for="">CVC</label>
+<input class="x" type="number" name="cvv" [formControl]="cvv" >
+</div>
+</div>
+
+<div class="form-group">
+<button type="button" (click)="saveDebitCard()">Save</button>
+</div>
+</form>
+</div>
+<div class="cards-grid" >
+<div class="card-row"  *ngFor="let add of adds" >
+<div class="card-row-details">
+ <!-- <span>{{add.id}}</span>  -->
+<span>{{add.cardnumber}}</span>
+<span>{{add.cardholder}}</span>
+ExpirationMM:-<span>{{add.expirationMM}}</span>
+ExpairyYear:-<span>{{add.expirationYY}}</span>
+CVV:-<span>{{add.cvv}}</span> 
+</div>
+<!-- <div class="card-row-action" method="delete">
+<a >🗑️</a> 
+<a (click)="deleteCard(add.id)">🗑️</a>
+</div> -->
+</div>
+</div>
+</div>
+</div>
+
+

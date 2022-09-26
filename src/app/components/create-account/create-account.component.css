@@ -1,0 +1,158 @@
+
+#x{
+    background-color:rgb(192,192,192);
+    height: 700px;
+    width: 50%;
+    margin-left: 300px;
+}
+.x{
+    margin-left: 100px;
+}
+input,button{
+    margin-left: 100px;
+}
+label{
+    color: blue;
+} */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  .container-fluid{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items:baseline;
+    justify-content: center;
+    background-color: rgb(213, 213, 209);
+    column-gap: 30px;
+  }
+  .form{
+    position: absolute;
+    max-width: 430px;
+    margin-top: 20px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 6px;
+    background: #FFF;
+  }
+  .form.signup{
+    opacity: 0;
+    pointer-events: none;
+  }
+  .forms.show-signup .form.signup{
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .forms.show-signup .form.login{
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  h1{
+    text-align: center;
+    /* font-weight: bold; */
+    /* text-decoration: underline; */
+  }
+  h3{
+    margin-left: 100px;
+    margin-top: 30px;
+  }
+  form{
+    margin-top: 30px;
+  }
+  .form .field{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 6px;
+  }
+  .field input,
+  .field button{
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 6px;
+  }
+  .field input{
+    outline: none;
+    padding: 0 15px;
+    border: 1px solid#CACACA;
+  }
+  .field input:focus{
+    border-bottom-width: 2px;
+  }
+  .eye-icon{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #8b8b8b;
+    cursor: pointer;
+    padding: 5px;
+  }
+  .email-icon{
+  
+    position: absolute;
+    top: 45%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #8b8b8b;
+    cursor: pointer;
+    padding: 5px;
+  }
+  .mob-icon{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #8b8b8b;
+    cursor: pointer;
+    padding: 5px;
+  }
+  .person-icon{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #8b8b8b;
+    cursor: pointer;
+    padding: 5px;
+  }
+  
+  .field button{
+    color: #fff;
+    background-color: green;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  .field button:hover{
+    background-color: yellowgreen;
+  }
+  .form-link{
+    text-align: center;
+    margin-top: 10px;
+  }
+  .form-link a{
+    font-size: 14px;
+    font-weight: 400;
+    color: #232836;
+  }
+  .form a{
+    color: #0171d3;
+    text-decoration: none;
+  }
+  .form-content a:hover{
+    text-decoration: underline;
+  }
+  
+  

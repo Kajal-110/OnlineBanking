@@ -1,0 +1,39 @@
+
+div{
+    height:300px;
+    width:420px;
+    background-color:rgb(220,220,220);
+    margin-left:450px;
+    margin-top:80px;
+    border-radius:10px;
+    }
+    input {
+    margin-left:100px;
+    height:30px;
+    width:190px;
+    }
+    label{
+    margin-left:100px;
+    margin-top: 20px;
+    }
+    button{
+    margin-left:120px;
+    background-color:blue;
+    color:white;
+    height:30px;
+    width:150px;
+    margin-top:20px;
+    border:1px solid white;
+    border-radius:20px;
+    }
+    h2{
+    text-align:center;
+    }
+    a{
+    color:blue;
+    text-decoration:underline;
+    }
+    p{
+    margin-left:75px;
+    margin-top: 20px;
+    }
